@@ -60,13 +60,13 @@
   #      count += 1
 
 #print("Number of vowels:", count)
-a = [1,2,3,4,5,]
+a = [1,2,3,4,5]
 reverse = ""
+b = list(reverse)
 for i in a :
     reverse = str(i) + " " + reverse
     
 print(reverse)
 b = [1,2,3,4,5]
 print(b[::-1])
-c = [1,2,3,4,5]
-print(c[-1:4:-1])
+

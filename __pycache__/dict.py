@@ -7,7 +7,7 @@ print(a["bananas"])  # Output: 2'''
 '''
 employees = {
     "nishant": {"age": 21, "salary": 50000},
-    "priya": {"age": 25, "salary": 60000},
+    "Khushi": {"age": 25, "salary": 60000},
     "rohit": {"age": 30, "salary": 70000}
 }
 
@@ -21,7 +21,10 @@ for name, details in employees.items():
         highest_salary = details["salary"]
         highest_paid_employee = name
 
-print(f"Highest paid employee: {highest_paid_employee} (${highest_salary})")'''
+print(f"Highest paid employee: {highest_paid_employee} (${highest_salary})")
+print(employees.keys())
+print(employees.values())
+print(employees.items())'''
 '''cart = []
 
 def add_item(item_name, item_price):
@@ -56,12 +59,12 @@ print(f"Total price: {calculate_total()}")
 remove_item("Bread")
 
 print(f"Final Total: {calculate_total()}")'''
-sentence = "python is great and python is fast"
+'''sentence = "Nishant , Ram , Ram , yogesh,janvi,janvi, hardeep"
 
 unique_words = set()
 current_word = ""
 for ch in sentence:
-    if ch == " ":
+    if ch == " " or ch == ",":
         
         if current_word != "":
             unique_words.add(current_word)
@@ -74,4 +77,53 @@ for ch in sentence:
 if current_word != "":
     unique_words.add(current_word)
 
-print(f"Unique words: {unique_words}")
+print(f"Unique words: {unique_words}")'''
+'''dict = {"a":3 , "b":2 , "c":4 }
+b = sorted(dict.values())
+print(b)'''
+'''phonebook = {}
+
+def add_contact():
+    name = input("Enter name: ")
+    number = input("Enter phone number: ")
+    
+    phonebook[name] = number
+    print(f"{name} added successfully!")
+    
+def search_contact():   
+    name = input("Enter name to search: ")
+    
+    if name in phonebook:
+        print(f"{name}'s number is {phonebook[name]}")
+    else:
+        print("Contact not found!")'''
+
+
+# words = sentence.split()
+# word_count = {}
+# for word in words:
+#     if word in word_count:
+#         word_count[word] += 1
+#     else:
+#         word_count[word] = 1
+
+
+'''sentence = "python is great and python is easy to learn"
+words=sentence.lower().split()
+word_num={}
+
+
+
+for word in words:
+    if word in word_num:
+        word_num[word]+=1
+    else:
+        word_num[word]=1
+for k,v in word_num.items():
+    if v==1:
+        print(f"'{k}' unique") '''
+    
+        
+
+
+    

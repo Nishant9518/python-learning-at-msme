@@ -101,10 +101,70 @@ def ismax():
     return ("the count of even numbers from 1 to " + str(n) + "is" + str(count)
 '''
 
-
-def  sum(*n):
+'''def  sum(*n):
     sum = 0
     for i in n:
         sum += i
     return("the sum of the numbers is",sum)
-sum()
+sum(1,2,3,4,5,6,7,8)'''
+
+'''def highest_number(*n):
+    highest_number=0
+    for i in n:
+        if i > highest_number:
+            highest_number = i
+    return (highest_number)
+print(highest_number(1,34,56,24))'''
+
+'''def student_info(*a, **j):
+    for in a :
+        print(i)
+    for k,o in j.items():
+        print(k,o)
+        student_info("math","english", name= "nishant" , class = "btech")'''
+ 
+'''
+def analyze_number(*list ):
+    even_count = 0
+    odd_count = 0
+    largest = list[0]
+    smallest = list[0]
+
+    
+    for i in list:
+        if i % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+        if i > largest:
+            largest = i
+    smallest = list[0]
+    for i in list:
+        if i < smallest:
+            smallest = i
+
+    return ("the count of even numbers is", even_count, "and the count of odd numbers is", odd_count, "the largest number is", largest, "the smallest number is", smallest)
+print(analyze_number(1,2,3,4,5,6,7,8))'''
+def password():
+        passwrd = input("enter a password : ")
+        upr =  False
+        num = False
+        lwr = False
+        if len(passwrd) >= 8:
+           for i in passwrd:
+            if i.isupper():
+                upr = True
+            elif i.islower():
+                lwr = True
+            elif i.isdigit():
+                num = True
+                if(upr and lwr and num):
+                    print("the password is valid")
+                else:
+                    print("the password is invalid")
+password()
+
+ 
+
+#name = input("enter your name : ")   
+ 
